@@ -1,0 +1,540 @@
+@extends('layout.app')
+
+@section('title', 'Home')
+
+@section('content')
+   
+
+    <!-- Start Slider Area  -->
+        <div class="rn-slider-area" id="home">
+            <!-- Start Single Slide  -->
+            <div
+                class="slide personal-portfolio-slider slider-paralax slider-style-3 dark-slider d-flex align-items-center justify-content-center bg_image bg_image--28">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="inner text-start">
+                                <span>Global Leadership Trainer & Coach</span>
+                                <h1 class="title">Hi, I’m <span>Quazi</span></h1>
+                                {{-- <h2>based in Bangladesh.</h2> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide  -->
+            </div>
+        </div>
+        <!-- End Slider Area  -->
+
+        <!-- Start About Area  -->
+        <div class="about-area rn-section-gap bg_color--1" id="about">
+            <div class="about-wrapper">
+                <div class="container">
+                    <div class="row row--35 align-items-center">
+                        <div class="col-lg-5">
+                            <div class="thumbnail">
+                                <img class="w-100" src="{{ asset('assets/images/about/about-8.jpg') }}" alt="About Images" />
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="about-inner inner pt--100 pt_sm--40 pt_md--40">
+                                <div class="section-title">
+                                    <h2 class="title">About Me</h2>
+                                    <p class="description"style="text-align: justify;"><i>Global Leadership Trainer & Coach</i><br>
+Founder & CEO, Global Center of Excellence, LLC, USA<br>
+Founder & Managing Partner, Quazi Consultants, Bangladesh <br>Over the past 27 years, Quazi M. Ahmed has built a strong international reputation as a master trainer, engaging keynote speaker, 
+executive coach, and management consultant, working with diverse organizations and leaders across 13 countries in Asia, Europe, and North America, positively impacting the lives of more than 100,000 professionals and entrepreneurs.
+
+                                    </p>
+                                </div>
+                                <div class="tab-wrapper mt--30">
+                                    <ul class="nav nav-tabs tab-style--1" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="mainskill" data-bs-toggle="tab"
+                                                data-bs-target="#rn-mainskill" role="tab" aria-controls="mainskill"
+                                                aria-selected="true">Skills & Expertise</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="awards" data-bs-toggle="tab"
+                                                data-bs-target="#rn-awards" role="tab" aria-controls="awards"
+                                                aria-selected="false">Awards</a>
+                                        </li>
+                                        {{-- <li class="nav-item">
+                                            <a class="nav-link" id="experience" data-bs-toggle="tab"
+                                                data-bs-target="#rn-experience" role="tab"
+                                                aria-controls="experience" aria-selected="false">Experience</a>
+                                        </li> --}}
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="education" data-bs-toggle="tab"
+                                                data-bs-target="#rn-education" role="tab" aria-controls="education"
+                                                aria-selected="false">Advanced Academic Background</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="rn-mainskill" role="tabpanel"
+                                            aria-labelledby="mainskill">
+                                            <div class="single-tab-content">
+                                                <ul>
+                                                    <li><a href="#">Leadership Development: </a>Expert in designing and facilitating international leadership programs, including the Puma Leadership Expedition (PLE) in the Asia Pacific region.</li>
+                                                    <li><a href="#">Professional Coaching: </a> Certified Facilitator for Inside Out Coaching (USA) and a dedicated leadership coach.</li>
+                                                    <li><a href="#">International Training: </a>Extensive experience conducting workshops in diverse countries such as the UK, USA, Canada, Denmark, Thailand, Vietnam, and Afghanistan.</li>
+                                                    <li><a href="#">Public Speaking: </a>Accomplished TEDx Speaker and Keynote Presenter for major corporate and public events.</li>
+                                                     <li><a href="#">Soft Skills Development:  </a>Specialist in soft skills training for corporate, social/NGO, and government sectors.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="rn-awards" role="tabpanel"
+                                            aria-labelledby="Awards & Certifications">
+                                            <div class="single-tab-content">
+                                                <ul>
+                                                    <li><a href="#">IFC-Certified Master Trainer: </a> Holds the prestigious Master Trainer certification from the International Finance Corporation (World Bank Group).
+                                                    </li>
+                                                    <li><a href="#">IFC Certified Assessor: </a>Recognized as a certified assessor (2021) and certified face-to-face trainer.
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="rn-experience" role="tabpanel"
+                                            aria-labelledby="experience">
+                                            <div class="single-tab-content">
+                                                <ul>
+                                                    <li><a href="/service">Sr. Front-end Engineer<span> -
+                                                                Google</span></a> 2018
+                                                        - Current</li>
+                                                    <li><a href="/service">Front-end Engineer<span> -
+                                                                Microsoft</span></a> 2017
+                                                        - 2018</li>
+                                                    <li><a href="/service">Software Engineer<span> - Alibaba
+                                                            </span></a> 2013-
+                                                        2014</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="rn-education" role="tabpanel"
+                                            aria-labelledby="education">
+                                            <div class="single-tab-content">
+                                                <ul>
+                                                    
+                                                    <li><a href="/service">MP <span>- New York University (NYU), USA. </a></li>
+                                                    <li><a href="/service">MA <span> - Japan.</span></a></li>
+                                                    <li><a href="/service">MBA <span> - IBA, Bangladesh.</span></a></li>
+                                                    <li><a href="/service">LLB <span> - Bangladesh.</span></a></li>
+                                                    <li><a href="/service">CISS <span> - Norway.</span></a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Area  -->
+
+        <!-- Start Service Area  -->
+        <div class="rn-service-area rn-section-gap bg_color--5" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title service-style--3 text-center mb--20 mb_sm--0 md_md--0">
+                            <h2 class="title">Professional Services</h2>
+                            {{-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration.</p> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="cast"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Leadership Development & Training</h3>
+                                        <p>Customized programs designed for the corporate, social/NGO, and government sectors. This includes the facilitation of International Leadership Programs (ILP) and specialized Leadership Expeditions for global teams.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="layers"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Executive Coaching</h3>
+                                        <p>High-impact leadership coaching and facilitation for senior management. Utilizing globally recognized methodologies, such as Inside Out Coaching (USA), to unlock individual and organizational potential.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="users"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Soft Skills Mastery</h3>
+                                        <p>Comprehensive workshops focused on essential interpersonal skills, including emotional intelligence, communication, and team synergy, tailored to enhance organizational culture.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="monitor"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Keynote Speaking</h3>
+                                        <p>Engaging presentations for corporate events and international conferences. As a TEDx speaker, Quazi M. Ahmed delivers insights on leadership and personal growth that resonate with global audiences.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="camera"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Global Facilitation & Consulting</h3>
+                                        <p>Expert facilitation for multinational organizations, drawing on over 27 years of experience across the USA, UK, Asia, and Europe to address complex organizational challenges.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+
+                    <!-- Start Single Service  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--40">
+                        <div class="single-service service__style--2 bg-color-gray">
+                            <a href="#">
+                                <div class="service">
+                                    <div class="icon">
+                                        <i data-feather="activity"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="title">Certified Assessments</h3>
+                                        <p>Professional training assessments and delivery that adhere to the rigorous international standards of the IFC (World Bank Group), ensuring measurable impact and quality.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Single Service  -->
+                </div>
+            </div>
+        </div>
+        <!-- Start Service Area  -->
+
+        <!-- Start Portfolio Area  -->
+        <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title section-title--3 text-center mb--30">
+                            <h2 class="title">My Latest Project</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, <br /> but the
+                                majority have suffered alteration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-8"></div>
+                                <div class="bg-blr-image image-8"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-7"></div>
+                                <div class="bg-blr-image image-7"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-3"></div>
+                                <div class="bg-blr-image image-3"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-4"></div>
+                                <div class="bg-blr-image image-4"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-3"></div>
+                                <div class="bg-blr-image image-3"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-2"></div>
+                                <div class="bg-blr-image image-2"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Development</p>
+                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="view-more-btn mt--60 mt_sm--30 text-center">
+                            <a class="rn-button-style--2 btn_solid" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Portfolio Area  -->
+
+        <!-- Start Blog Area  -->
+        <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title section-title--3 text-center mb--30">
+                            <h2 class="title">Latest News</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, <br /> but the
+                                majority have suffered alteration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Start Blog Area  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog blog-style--1">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-01.jpg') }}" alt="Blog Images" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p class="blogtype">Development</p>
+                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                </h4>
+                                <div class="blog-btn">
+                                    <a class="rn-btn text-white" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Area  -->
+
+                    <!-- Start Blog Area  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog blog-style--1">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-02.jpg') }}" alt="Blog Images" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p class="blogtype">Development</p>
+                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                </h4>
+                                <div class="blog-btn">
+                                    <a class="rn-btn text-white" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Area  -->
+
+                    <!-- Start Blog Area  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog blog-style--1">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-03.jpg') }}" alt="Blog Images" />
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p class="blogtype">Development</p>
+                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                </h4>
+                                <div class="blog-btn">
+                                    <a class="rn-btn text-white" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Blog Area  -->
+                </div>
+            </div>
+        </div>
+        <!-- End Blog Area  -->
+
+        <!-- Start Contact Area  -->
+        <div class="rn-contact-area rn-section-gap bg_color--1" id="contact">
+            <div class="contact-form--1">
+                <div class="container">
+                    <div class="row row--35 align-items-start">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <div class="section-title text-start mb--50 mb_sm--30 mb_md--30">
+                                <h2 class="title">Reach Out to Me.</h2>
+                                <p class="description">I am available for freelance work. Connect with me via
+                                    phone:
+                                    <a href="https://wa.me:+880 1711-561861">+880 1711-561861</a> or email:
+                                    <a href="mailto:quazi@quazi.global"> quazi@quazi.global</a>
+                                </p>
+                            </div>
+                            <div class="form-wrapper">
+                                <form>
+                                    <label htmlFor="item01">
+                                        <input type="text" name="name" id="item01" placeholder="Your Full Name *" />
+                                    </label>
+
+                                    <label htmlFor="item02">
+                                        <input type="text" name="email" id="item02" placeholder="Your email *">
+                                    </label>
+
+                                    <label htmlFor="item03">
+                                        <input type="text" name="subject" id="item03" placeholder="Write a Subject">
+                                    </label>
+                                    <label htmlFor="item04">
+                                        <textarea type="text" id="item04" name="message"
+                                            placeholder="Your Message"></textarea>
+                                    </label>
+                                    <button class="rn-button-style--2 btn_solid" type="submit" value="submit"
+                                        name="submit" id="mc-embedded-subscribe">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2">
+                            <div class="thumbnail mb_md--30 mb_sm--30">
+                                <img src="{{ asset('assets/images/about/about-9.jpg') }}" alt="trydo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Area  -->
+
+
+@endsection
