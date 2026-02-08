@@ -17,26 +17,26 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-  echo "WHOAMI:"
-  whoami
+            echo "WHOAMI:"
+            whoami
 
-  echo "PWD:"
-  pwd
+            echo "PWD:"
+            pwd
 
-  echo "LIST HOME:"
-  ls -la /home/globgcbn
+            echo "LIST HOME:"
+            ls -la /home/globgcbn
 
-  echo "ENTER PROJECT DIR"
-  cd /home/globgcbn/quazi.global || exit 1
+            echo "ENTER PROJECT DIR"
+            cd /home/globgcbn/quazi.global || exit 1
 
-  echo "LIST PROJECT DIR:"
-  ls -la
+            echo "LIST PROJECT DIR:"
+            ls -la
 
-  echo "GIT STATUS:"
-  git status || echo "NOT A GIT REPO"
+            echo "GIT STATUS:"
+            git status || echo "NOT A GIT REPO"
 
-  echo "GIT BRANCH:"
-  git branch || true
+            echo "GIT BRANCH:"
+            git branch || true
 
-  echo "TRY PULL:"
-  git pull origin main || git pull origin master
+            echo "TRY PULL:"
+            git pull origin main || git pull origin master
