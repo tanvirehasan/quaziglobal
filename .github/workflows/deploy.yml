@@ -18,9 +18,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.globalcenterofexcellence.com
-          username: ${{ secrets.FTP_USER }}
+          username: gitmain@quazi.global
           password: ${{ secrets.FTP_PASS }}
           port: 21
           protocol: ftp
 
-          
