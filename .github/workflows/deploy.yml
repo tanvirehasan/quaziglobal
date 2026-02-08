@@ -19,7 +19,7 @@ jobs:
         with:
           server: ftp.globalcenterofexcellence.com
           username: gitmain@quazi.global
-          password: ${{ secrets.FTP_PASS }}
+          password: Tanvir@@114
           port: 21
           protocol: ftp
 
