@@ -17,10 +17,11 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.globalcenterofexcellence.com
+          server: globalcenterofexcellence.com
           username: gitmain@quazi.global
           password: Tanvir@@114
           port: 21
           protocol: ftps
           security: loose
+          timeout: 600000
 
