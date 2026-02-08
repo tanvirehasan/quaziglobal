@@ -326,8 +326,7 @@ executive coach, and management consultant, working with diverse organizations a
                     <div class="col-lg-12">
                         <div class="section-title section-title--3 text-center mb--30">
                             <h2 class="title">My Latest Project</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, <br /> but the
-                                majority have suffered alteration.</p>
+                            <p>Empowering leaders and organizations globally through 27+ years of expertise in leadership development, executive coaching, and high-impact training.</p>
                         </div>
                     </div>
                 </div>
@@ -341,11 +340,11 @@ executive coach, and management consultant, working with diverse organizations a
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    <p>Leadership</p>
+                                    <h4><a href="#">bkash Leardership Excellence Program - batch 11</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
+                                        <a class="rn-btn" href="#">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -362,11 +361,11 @@ executive coach, and management consultant, working with diverse organizations a
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    <p>Leadership</p>
+                                    <h4><a href="#">Leadership Mastery Program</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
+                                        <a class="rn-btn" href="#">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -378,22 +377,43 @@ executive coach, and management consultant, working with diverse organizations a
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                         <div class="portfolio text-center">
                             <div class="thumbnail-inner">
-                                <div class="thumbnail image-3"></div>
-                                <div class="bg-blr-image image-3"></div>
+                                <div class="thumbnail image-6"></div>
+                                <div class="bg-blr-image image-6"></div>
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    <p>Team Building</p>
+                                    <h4><a href="#">People Skills for Professional Success</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
+                                        <a class="rn-btn" href="#">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Single Portfolio  -->
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-5"></div>
+                                <div class="bg-blr-image image-5"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Team Building</p>
+                                    <h4><a href="#">Strategic Leadership in a Cross-Cultural World </a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
                     <!-- Start Single Portfolio  -->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                         <div class="portfolio text-center">
@@ -403,11 +423,11 @@ executive coach, and management consultant, working with diverse organizations a
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    <p>Team Building</p>
+                                    <h4><a href="#">LEADING ACROSS TEAMS</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
+                                        <a class="rn-btn" href="#">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -415,41 +435,22 @@ executive coach, and management consultant, working with diverse organizations a
                     </div>
                     <!-- End Single Portfolio  -->
 
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-3"></div>
-                                <div class="bg-blr-image image-3"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
 
-                    <!-- Start Single Portfolio  -->
+
+                                        <!-- Start Single Portfolio  -->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                         <div class="portfolio text-center">
                             <div class="thumbnail-inner">
-                                <div class="thumbnail image-2"></div>
-                                <div class="bg-blr-image image-2"></div>
+                                <div class="thumbnail image-1"></div>
+                                <div class="bg-blr-image image-1"></div>
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Development</p>
-                                    <h4><a href="#">Getting tickets to the big show</a>
+                                    <p>Leadership</p>
+                                    <h4><a href="#">From Good to Great: Leadership Excellence in Pharmaceuticals</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Case Study</a>
+                                        <a class="rn-btn" href="#">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +461,7 @@ executive coach, and management consultant, working with diverse organizations a
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="view-more-btn mt--60 mt_sm--30 text-center">
-                            <a class="rn-button-style--2 btn_solid" href="#">View More</a>
+                            <a class="rn-button-style--2 btn_solid" href="{{ route('projects') }}">View More</a>
                         </div>
                     </div>
                 </div>

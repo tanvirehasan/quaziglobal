@@ -26,4 +26,8 @@ class Homecontroller extends Controller
     {
         return view(view: 'font-end.home');
     }
+    public function projects()
+    {
+        return view('font-end.project'); 
+    }
 }

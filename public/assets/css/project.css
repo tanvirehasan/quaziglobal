@@ -1,0 +1,257 @@
+        /* --- Basic Reset & Variables --- */
+        :root {
+            --primary-color: #212121;
+            --accent-color: #00d09c; /* Greenish accent */
+            --text-color: #333;
+            --bg-light: #ffffff;
+            --bg-gray: #f9f9f9;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- Layout System (Bootstrap-like) --- */
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+        
+        /* Columns */
+        .col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+        .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+        .col-12 { flex: 0 0 100%; max-width: 100%; }
+        
+        .mt--30 { margin-top: 30px; }
+        .mt--60 { margin-top: 60px; }
+        .mb--30 { margin-bottom: 30px; }
+        .text-center { text-align: center; }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 991px) { .col-lg-4 { flex: 0 0 50%; max-width: 50%; } }
+        @media (max-width: 767px) { .col-lg-4, .col-md-6 { flex: 0 0 100%; max-width: 100%; } }
+        @media (max-width: 575px) { .section-title br { display: none; } }
+
+        /* --- Section Styling --- */
+        .rn-portfolio-area {
+            padding: 80px 0;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+        .bg_color--1 { background-color: #fff; }
+
+        /* Section Title */
+        .section-title { margin-bottom: 50px; }
+        .section-title h2.title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1f1f25;
+        }
+        .section-title p { font-size: 16px; color: #717173; }
+
+        /* --- Portfolio Card Design --- */
+        .portfolio {
+            position: relative;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+        
+        /* Image Area */
+        .thumbnail-inner {
+            position: relative;
+            padding-top: 66.66%; /* Aspect Ratio 3:2 */
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        /* Main Thumbnail */
+        .thumbnail {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+            z-index: 2;
+        }
+
+        /* Blurred Background Image */
+        .bg-blr-image {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            opacity: 0.6;
+            z-index: 1;
+            transform: scale(1.1);
+        }
+
+        /* Hover Effects */
+        .portfolio:hover .thumbnail {
+            transform: scale(1.1);
+        }
+
+        /* Content Overlay */
+        .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+            padding: 30px 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        .portfolio:hover .content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .inner {
+            position: relative;
+            z-index: 4;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        .portfolio:hover .inner {
+            transform: translateY(0);
+        }
+
+        .content p {
+            color: var(--accent-color);
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .content h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .content h4 a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .content h4 a:hover { color: var(--accent-color); }
+
+        /* Buttons */
+        .rn-btn, .rn-button-style--2 {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        /* Small Button in Card */
+        .rn-btn {
+            background-color: var(--accent-color);
+            color: #fff;
+            font-size: 12px;
+            padding: 8px 20px;
+        }
+        .rn-btn:hover {
+            background-color: #fff;
+            color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* View More Button */
+        .btn_solid {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: 2px solid var(--primary-color);
+        }
+        .btn_solid:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        /* --- Filter Buttons --- */
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+        .filter-btn {
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #717173;
+            cursor: pointer;
+            padding: 5px 15px;
+            transition: 0.3s;
+            position: relative;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            color: var(--primary-color);
+        }
+        .filter-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        /* --- Image Placeholders (Picsum) --- */
+        /* Using specific seeds to match the 'image-X' classes concept */
+        /* .image-1 { background-image: url('https://picsum.photos/seed/proj1/600/400'); }
+        .image-2 { background-image: url('https://picsum.photos/seed/proj2/600/400'); }
+        .image-3 { background-image: url('https://picsum.photos/seed/proj3/600/400'); }
+        .image-4 { background-image: url('https://picsum.photos/seed/proj4/600/400'); }
+        .image-5 { background-image: url('https://picsum.photos/seed/proj5/600/400'); }
+        .image-6 { background-image: url('https://picsum.photos/seed/proj6/600/400'); }
+        .image-7 { background-image: url('https://picsum.photos/seed/proj7/600/400'); }
+        .image-8 { background-image: url('https://picsum.photos/seed/proj8/600/400'); }
+        .image-9 { background-image: url('https://picsum.photos/seed/proj9/600/400'); } */
+
+        /* Animation class for filtering */
+        .hide-item {
+            display: none;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        .show-item {
+            display: block;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: scale(1); }
+        }

@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
         <!-- CSS -->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{{ asset('assets/css/vendor/lightbox.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/plugins.css') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+        {{-- <link rel="stylesheet" href="{{ asset('assets/css/project.css') }}"> --}}
         @stack('css')
     </head>
 <body>
