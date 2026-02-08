@@ -1,4 +1,4 @@
-name: 🚀 Deploy website on push
+name: 🚀 Deploy via SSH
 
 on:
   push:
@@ -10,16 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: 🚀 SSH Deploy
+        uses: appleboy/ssh-action@v1
         with:
-          server: globalcenterofexcellence.com
-          username: gitmain@quazi.global
-          password: Tanvir@@114
-          port: 22
-          protocol: sftp
-          security: loose
-          timeout: 600000
-
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd public_html
+            git pull origin main
