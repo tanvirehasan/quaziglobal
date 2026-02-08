@@ -21,5 +21,6 @@ jobs:
           username: gitmain@quazi.global
           password: Tanvir@@114
           port: 21
-          protocol: ftp
+          protocol: ftps
+          security: loose
 
