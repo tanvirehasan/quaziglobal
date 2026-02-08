@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\fontend\HomeController;
+use App\Http\Controllers\fontend\Homecontroller;
 use App\Http\Controllers\BlocksController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ServiceController;
