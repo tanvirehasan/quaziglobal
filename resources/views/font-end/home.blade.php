@@ -16,7 +16,7 @@
                             <div class="inner text-start">
                                 <span>Global Leadership Trainer & Coach</span>
                                 <h1 class="title">Hi, I’m <span>Quazi</span></h1>
-                                {{-- <h2>based in Bangladesh.</h2> --}}
+                                {{-- <h2>based in Bangladesh. XIKO</h2> --}}
                             </div>
                         </div>
                     </div>
