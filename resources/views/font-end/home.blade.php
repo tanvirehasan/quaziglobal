@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="inner text-start">
-                                <span>Global Leadership Trainer & Coach</span>
+                                <span>Global Leadership Trainer & Executive Coach</span>
                                 <h1 class="title">Hi, I’m <span>Quazi</span></h1>
                                 {{-- <h2>based in Bangladesh. XIKO</h2> --}}
                             </div>
@@ -262,6 +262,62 @@ executive coach, and management consultant, working with diverse organizations a
             </div>
         </div>
         <!-- Start Service Area  -->
+
+<!-- Start Founder Area -->
+<div class="rn-founder-area rn-section-gap bg_color--1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center mb--40">
+                    <h2 class="title">I am the Founder of</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Single Logo -->
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb--30">
+                <div class="founder-logo text-center">
+                    <a href="https://quaziconsultants.com" target="_blank">
+                        <span class="hover-overlay"></span>
+                        <img src="{{ asset('assets/images/founder/logo-1.png') }}" alt="QUAZI Consultants">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb--30">
+                <div class="founder-logo text-center">
+                    <a href="https://globalcenterofexcellence.com/" target="_blank">
+                    <span class="hover-overlay"></span>
+                        <img src="{{ asset('assets/images/founder/logo-2.png') }}" alt="Global Center of Excellence, LLC">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb--30">
+                <div class="founder-logo text-center">
+                    <a href="https://bondbd.net/" target="_blank">
+                        <span class="hover-overlay"></span>
+                        <img src="{{ asset('assets/images/founder/logo-3.png') }}" alt="Company Name">
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 mb--30">
+                <div class="founder-logo text-center">
+                    <a href="https://boldbd.org/" target="_blank">
+                        <span class="hover-overlay"></span>
+                        <img src="{{ asset('assets/images/founder/logo-5.png') }}" alt="Company Name">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Founder Area -->
+
 
         <!-- Start Portfolio Area  -->
         <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">

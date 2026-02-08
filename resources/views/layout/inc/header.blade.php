@@ -37,13 +37,11 @@
                 <div class="header-right">
                     <div class="social-share-inner">
                         <ul class="social-share social-style--2 d-flex justify-content-start liststyle">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/quazi.ahmed"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/quaziahmed/"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
-                    <div class="header-btn ml_md--20 ml_sm--0"><a class="rn-btn" href="#"><span>buy now</span></a>
+                    {{-- <div class="header-btn ml_md--20 ml_sm--0"><a class="rn-btn" href="#"><span>buy now</span></a> --}}
                     </div>
                     <!-- Start Humberger Menu  -->
                     <div class="humberger-menu d-block d-lg-none pl--20 pl_sm--10">
