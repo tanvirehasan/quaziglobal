@@ -491,8 +491,8 @@ executive coach, and management consultant, working with diverse organizations a
                                 </a>
                             </div>
                             <div class="content">
-                                <p class="blogtype">Development</p>
-                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                <p class="blogtype">Festival</p>
+                                <h4 class="title"><a href="#">Learn2Lead Fest 2026 Convenes Leaders in Dhaka</a>
                                 </h4>
                                 <div class="blog-btn">
                                     <a class="rn-btn text-white" href="#">Read More</a>
@@ -511,8 +511,8 @@ executive coach, and management consultant, working with diverse organizations a
                                 </a>
                             </div>
                             <div class="content">
-                                <p class="blogtype">Development</p>
-                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                <p class="blogtype">Consultation</p>
+                                <h4 class="title"><a href="#">Consultation Meting with NRBs</a>
                                 </h4>
                                 <div class="blog-btn">
                                     <a class="rn-btn text-white" href="#">Read More</a>
@@ -531,8 +531,8 @@ executive coach, and management consultant, working with diverse organizations a
                                 </a>
                             </div>
                             <div class="content">
-                                <p class="blogtype">Development</p>
-                                <h4 class="title"><a href="#">Getting tickets to the big show</a>
+                                <p class="blogtype">Consultation</p>
+                                <h4 class="title"><a href="#">Consultation Meting with NRBs</a>
                                 </h4>
                                 <div class="blog-btn">
                                     <a class="rn-btn text-white" href="#">Read More</a>
