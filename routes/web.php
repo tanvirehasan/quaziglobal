@@ -13,6 +13,3 @@ Route::controller(Homecontroller::class)->group(function () {
     Route::get('elements','elements')->name('elements');
     Route::get('projects', 'projects')->name('projects');
 });
-
-
-

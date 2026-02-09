@@ -5,7 +5,7 @@
 @section('content')
 
 <style>
-    /* --- Layout & Grid (পূর্বের মতোই) --- */
+
     .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 15px; }
     .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
     .col-lg-4 { flex: 0 0 33.333%; max-width: 33.333%; padding: 0 15px; }
@@ -17,48 +17,48 @@
     @media (max-width: 991px) { .col-lg-4 { flex: 0 0 50%; max-width: 50%; } }
     @media (max-width: 767px) { .col-lg-4, .col-md-6 { flex: 0 0 100%; max-width: 100%; } }
 
-    /* --- Portfolio Card Design --- */
+
     .portfolio {
         position: relative;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        background: #fff; /* ইমেজ লোড হওয়ার আগে ব্যাকগ্রাউন্ড */
+        background: #fff; 
     }
 
     .thumbnail-inner {
         position: relative;
-        padding-top: 66.66%; /* 3:2 Aspect Ratio */
+        padding-top: 66.66%; 
         overflow: hidden;
     }
 
-    /* ইমেজ স্টাইল (পরিবর্তিত অংশ) */
+
     .thumbnail-inner img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* এটি ইমেজকে ক্রপ করে বক্সে ফিট করবে */
+        object-fit: cover; 
         transition: all 0.5s ease;
     }
 
-    /* Blur Background Image */
+ 
     .bg-blr-image {
         filter: blur(20px);
         opacity: 0.6;
         z-index: 1;
-        transform: scale(1.1); /* Blur এর কারণে কিনারা সাদা না দেখানোর জন্য */
+        transform: scale(1.1); 
     }
 
-    /* Main Sharp Image */
+
     .thumbnail {
         z-index: 2;
     }
 
-    /* Hover Animation */
+
     .portfolio:hover .thumbnail {
-        transform: scale(1.1); /* জুম ইফেক্ট */
+        transform: scale(1.1); 
     }
 
     /* Content Overlay */
@@ -67,17 +67,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* পুরো বক্স জুড়ে কভার করবে */
+    height: 100%; 
     
-    /* Centering Magic */
+
     display: flex;
-    justify-content: center; /* আনুভূমিক কেন্দ্রে (Horizontal Center) */
-    align-items: center;     /* উল্লম্ব কেন্দ্রে (Vertical Center) */
+    justify-content: center; 
+    align-items: center;     
     
-    background-color: rgba(0, 0, 0, 0.452); /* ডার্ক ব্যাকগ্রাউন্ড যাতে সাদা টেক্সট পড়ে */
+    background-color: rgba(0, 0, 0, 0.452); 
     z-index: 3;
     
-    opacity: 0; /* শুরুতে লুকানো থাকবে */
+    opacity: 0; 
     transition: all 0.4s ease;
     }
     .portfolio:hover .content {
@@ -85,8 +85,8 @@
         transform: translateY(0);
     }
     .inner {
-    text-align: center; /* টেক্সটগুলো সেন্টারে থাকবে */
-    transform: translateY(20px); /* সামান্য নিচ থেকে উপরে উঠার এনিমেশন */
+    text-align: center; 
+    transform: translateY(20px); 
     transition: transform 0.4s ease;
     }
     .portfolio:hover .inner {     transform: translateY(0); }
@@ -102,7 +102,7 @@
     }
     .rn-btn:hover { background-color: #fff; color: #212121; }
 
-    /* Filter Buttons */
+
     .portfolio-filter { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
     .filter-btn {
         background: transparent; border: none; font-size: 16px; font-weight: 500;
@@ -110,8 +110,7 @@
     }
     .filter-btn.active, .filter-btn:hover { color: #212121; }
     .filter-btn.active { border-bottom: 2px solid #00d09c; }
-    
-    /* Animation Classes */
+
     .hide-item { display: none; }
     .show-item { display: block; animation: fadeIn 0.5s forwards; }
     @keyframes fadeIn { to { opacity: 1; } }
@@ -235,9 +234,9 @@
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    // Remove active class from all buttons
+
                     filterBtns.forEach(b => b.classList.remove('active'));
-                    // Add active class to clicked button
+
                     btn.classList.add('active');
 
                     const filterValue = btn.getAttribute('data-filter');
