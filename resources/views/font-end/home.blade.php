@@ -26,7 +26,7 @@
         </div>
         <!-- End Slider Area  -->
 
- <!-- Start Client Logo Area -->
+<!-- Start Client Logo Area -->
 <div class="rn-client-area rn-section-gap bg_color--1">
     <div class="container">
         <div class="row">
@@ -40,7 +40,7 @@
         <div class="client-slider">
             <div class="client-track">
 
-                <!-- Logos (Repeat Twice for Smooth Loop) -->
+                <!-- Original 14 Logos -->
                 <div class="client-logo">
                     <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
                 </div>
@@ -55,9 +55,36 @@
                 </div>
                 <div class="client-logo">
                     <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo8.svg') }}" alt="Client 8">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo9.svg') }}" alt="Client 9">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo11.png') }}" alt="Client 11">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo6.png') }}" alt="Client 6">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo7.svg') }}" alt="Client 7">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo10.png') }}" alt="Client 10">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo12.png') }}" alt="Client 12">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo13.png') }}" alt="Client 13">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo14.png') }}" alt="Client 14">
                 </div>
 
-                <!-- Duplicate -->
+                <!-- Duplicate 14 Logos for Smooth Loop -->
                 <div class="client-logo">
                     <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
                 </div>
@@ -72,6 +99,33 @@
                 </div>
                 <div class="client-logo">
                     <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo8.svg') }}" alt="Client 8">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo9.svg') }}" alt="Client 9">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo11.png') }}" alt="Client 11">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo6.png') }}" alt="Client 6">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo7.svg') }}" alt="Client 7">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo10.png') }}" alt="Client 10">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo12.png') }}" alt="Client 12">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo13.png') }}" alt="Client 13">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo14.png') }}" alt="Client 14">
                 </div>
 
             </div>
@@ -87,8 +141,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title text-center mb--40">
-                    <h2 class="title">Global Reach</h2>
-                    <p>Empowering leaders across <strong>13 countries</strong> in Asia, Europe, and North America</p>
+                    <h2 class="title">Presented Keynotes & Facilitated Training Globally</h2>
+                    {{-- <p>Empowering leaders across <strong>13 countries</strong> in Asia, Europe, and North America</p> --}}
                 </div>
             </div>
         </div>
@@ -181,6 +235,157 @@
     </div>
 </div>
 <!-- End Global Reach Map Area -->
+
+
+        <!-- Start Portfolio Area  -->
+        <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title section-title--3 text-center mb--30">
+                            <h2 class="title">My Latest Project</h2>
+                            <p>Empowering leaders and organizations globally through 27+ years of expertise in leadership development, executive coaching, and high-impact training.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-8"></div>
+                                <div class="bg-blr-image image-8"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Leadership</p>
+                                    <h4><a href="#">bkash Leardership Excellence Program - batch 11</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-7"></div>
+                                <div class="bg-blr-image image-7"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Leadership</p>
+                                    <h4><a href="#">Leadership Mastery Program</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-6"></div>
+                                <div class="bg-blr-image image-6"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Team Building</p>
+                                    <h4><a href="#">People Skills for Professional Success</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-5"></div>
+                                <div class="bg-blr-image image-5"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Team Building</p>
+                                    <h4><a href="#">Strategic Leadership in a Cross-Cultural World </a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+                    <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-4"></div>
+                                <div class="bg-blr-image image-4"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Team Building</p>
+                                    <h4><a href="#">LEADING ACROSS TEAMS</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+
+
+
+                                        <!-- Start Single Portfolio  -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                        <div class="portfolio text-center">
+                            <div class="thumbnail-inner">
+                                <div class="thumbnail image-1"></div>
+                                <div class="bg-blr-image image-1"></div>
+                            </div>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>Leadership</p>
+                                    <h4><a href="#">From Good to Great: Leadership Excellence in Pharmaceuticals</a>
+                                    </h4>
+                                    <div class="portfolio-button">
+                                        <a class="rn-btn" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio  -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="view-more-btn mt--60 mt_sm--30 text-center">
+                            <a class="rn-button-style--2 btn_solid" href="{{ route('projects') }}">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Portfolio Area  -->
 
 
         
@@ -477,155 +682,6 @@ executive coach, and management consultant, working with diverse organizations a
 <!-- End Founder Area -->
 
 
-        <!-- Start Portfolio Area  -->
-        <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title section-title--3 text-center mb--30">
-                            <h2 class="title">My Latest Project</h2>
-                            <p>Empowering leaders and organizations globally through 27+ years of expertise in leadership development, executive coaching, and high-impact training.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-8"></div>
-                                <div class="bg-blr-image image-8"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">bkash Leardership Excellence Program - batch 11</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-7"></div>
-                                <div class="bg-blr-image image-7"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">Leadership Mastery Program</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-6"></div>
-                                <div class="bg-blr-image image-6"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">People Skills for Professional Success</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-5"></div>
-                                <div class="bg-blr-image image-5"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">Strategic Leadership in a Cross-Cultural World </a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-4"></div>
-                                <div class="bg-blr-image image-4"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">LEADING ACROSS TEAMS</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-
-
-
-                                        <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-1"></div>
-                                <div class="bg-blr-image image-1"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">From Good to Great: Leadership Excellence in Pharmaceuticals</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="view-more-btn mt--60 mt_sm--30 text-center">
-                            <a class="rn-button-style--2 btn_solid" href="{{ route('projects') }}">View More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start Portfolio Area  -->
 
         <!-- Start Blog Area  -->
         <div class="rn-blog-area rn-section-gap bg_color--5" id="blog">

@@ -17499,31 +17499,42 @@ a.purchase-btn:hover {
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding: 20px 0;
 }
 
 .client-track {
     display: flex;
-    width: calc(200px * 10);
-    animation: scrollClient 25s linear infinite;
+    gap: 50px; /* Logo গুলোর মাঝে gap */
+    width: fit-content; /* Auto width based on content */
+    animation: scrollClient 35s linear infinite;
 }
 
 .client-logo {
-    width: 200px;
+    flex-shrink: 0; /* Logo shrink হবে না */
+    width: 180px; /* Fixed width */
+    height: 100px; /* Fixed height */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .client-logo img {
-    max-width: 140px;
+    max-width: 130px;
+    max-height: 60px;
+    object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.7;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.client-logo img:hover {
+.client-logo:hover img {
     filter: grayscale(0%);
     opacity: 1;
+    transform: scale(1.1);
 }
 
 @keyframes scrollClient {
@@ -17531,7 +17542,27 @@ a.purchase-btn:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-50%); /* Exactly 50% - first 14 logos */
+    }
+}
+
+/* Pause on hover */
+.client-slider:hover .client-track {
+    animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .client-logo {
+        width: 140px;
+        height: 80px;
+    }
+    .client-logo img {
+        max-width: 100px;
+        max-height: 45px;
+    }
+    .client-track {
+        gap: 30px;
     }
 }
 
