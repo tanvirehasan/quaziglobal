@@ -26,6 +26,164 @@
         </div>
         <!-- End Slider Area  -->
 
+ <!-- Start Client Logo Area -->
+<div class="rn-client-area rn-section-gap bg_color--1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center mb--50">
+                    <h2 class="title">Client Logo</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="client-slider">
+            <div class="client-track">
+
+                <!-- Logos (Repeat Twice for Smooth Loop) -->
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo2.png') }}" alt="Client 2">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo3.png') }}" alt="Client 3">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo4.png') }}" alt="Client 4">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
+                </div>
+
+                <!-- Duplicate -->
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo2.png') }}" alt="Client 2">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo3.png') }}" alt="Client 3">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo4.png') }}" alt="Client 4">
+                </div>
+                <div class="client-logo">
+                    <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Client Logo Area -->
+
+
+<!-- Start Global Reach Map Area -->
+<div class="rn-global-map-area rn-section-gap bg_color--1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center mb--40">
+                    <h2 class="title">Global Reach</h2>
+                    <p>Empowering leaders across <strong>13 countries</strong> in Asia, Europe, and North America</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="global-map-container" style="height: 500px; width: 100%; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); background: #e8e8e8;"></div>
+            </div>
+        </div>
+        
+        <!-- Country List -->
+        <div class="country-list-section mt--50">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="country-grid-wrapper">
+                        <div class="country-grid">
+                            <!-- Row 1: 7 items -->
+                            <div class="country-item" onclick="flyToCountry(0)" style="border-color: #1a1a1a;">
+                                <img src="https://flagcdn.com/w80/af.png" alt="Afghanistan" class="flag-img">
+                                <span class="name">Afghanistan</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(1)" style="border-color: #006a4e;">
+                                <img src="https://flagcdn.com/w80/bd.png" alt="Bangladesh" class="flag-img">
+                                <span class="name">Bangladesh</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(2)" style="border-color: #ff0000;">
+                                <img src="https://flagcdn.com/w80/ca.png" alt="Canada" class="flag-img">
+                                <span class="name">Canada</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(3)" style="border-color: #de2910;">
+                                <img src="https://flagcdn.com/w80/cn.png" alt="China" class="flag-img">
+                                <span class="name">China</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(4)" style="border-color: #c8102e;">
+                                <img src="https://flagcdn.com/w80/dk.png" alt="Denmark" class="flag-img">
+                                <span class="name">Denmark</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(5)" style="border-color: #ff9933;">
+                                <img src="https://flagcdn.com/w80/in.png" alt="India" class="flag-img">
+                                <span class="name">India</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(6)" style="border-color: #010066;">
+                                <img src="https://flagcdn.com/w80/my.png" alt="Malaysia" class="flag-img">
+                                <span class="name">Malaysia</span>
+                                <span class="check">✔</span>
+                            </div>
+                            
+                            <!-- Row 2: 6 items (centered) -->
+                            <div class="country-item" onclick="flyToCountry(7)" style="border-color: #dc143c;">
+                                <img src="https://flagcdn.com/w80/np.png" alt="Nepal" class="flag-img">
+                                <span class="name">Nepal</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(8)" style="border-color: #ed2939;">
+                                <img src="https://flagcdn.com/w80/sg.png" alt="Singapore" class="flag-img">
+                                <span class="name">Singapore</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(9)" style="border-color: #ed1c24;">
+                                <img src="https://flagcdn.com/w80/th.png" alt="Thailand" class="flag-img">
+                                <span class="name">Thailand</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(10)" style="border-color: #012169;">
+                                <img src="https://flagcdn.com/w80/gb.png" alt="UK" class="flag-img">
+                                <span class="name">UK</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(11)" style="border-color: #3c3b6e;">
+                                <img src="https://flagcdn.com/w80/us.png" alt="USA" class="flag-img">
+                                <span class="name">USA</span>
+                                <span class="check">✔</span>
+                            </div>
+                            <div class="country-item" onclick="flyToCountry(12)" style="border-color: #da251d;">
+                                <img src="https://flagcdn.com/w80/vn.png" alt="Vietnam" class="flag-img">
+                                <span class="name">Vietnam</span>
+                                <span class="check">✔</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Global Reach Map Area -->
+
+
+        
         <!-- Start About Area  -->
         <div class="about-area rn-section-gap bg_color--1" id="about">
             <div class="about-wrapper">
