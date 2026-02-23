@@ -6,16 +6,18 @@
    
 
     <!-- Start Slider Area  -->
+    @if($header)
         <div class="rn-slider-area" id="home">
             <!-- Start Single Slide  -->
-            <div
-                class="slide personal-portfolio-slider slider-paralax slider-style-3 dark-slider d-flex align-items-center justify-content-center bg_image bg_image--28">
+            <div style="background-image: url('{{ asset('storage/'.$header->background_image) }}');
+            background-position: fixed; background-repeat: no-repeat;  background-size: cover;  background-position: center center;"
+                class="slide personal-portfolio-slider slider-paralax slider-style-3 dark-slider d-flex align-items-center justify-content-center ">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="inner text-start">
-                                <span>Global Leadership Trainer & Executive Coach</span>
-                                <h1 class="title">Hi, I’m <span>Quazi</span></h1>
+                                <span>{{ $header->subtitle }}</span>
+                                <h1 class="title">Hi, I’m <span>{{ $header->title }}</span></h1>
                                 {{-- <h2>based in Bangladesh. XIKO</h2> --}}
                             </div>
                         </div>
@@ -24,9 +26,11 @@
                 <!-- End Single Slide  -->
             </div>
         </div>
+        @endif
         <!-- End Slider Area  -->
 
 <!-- Start Client Logo Area -->
+@if($clients->count())
 <div class="rn-client-area rn-section-gap bg_color--1">
     <div class="container">
         <div class="row">
@@ -39,99 +43,22 @@
 
         <div class="client-slider">
             <div class="client-track">
+                @foreach($clients as $client)
+<div class="client-logo">
+    <div class="logo-wrapper">
+        <img src="{{ asset('storage/'.$client->logo) }}"
+             alt="{{ $client->name }}">
+    </div>
+</div>
+                @endforeach
 
-                <!-- Original 14 Logos -->
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo2.png') }}" alt="Client 2">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo3.png') }}" alt="Client 3">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo4.png') }}" alt="Client 4">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo8.svg') }}" alt="Client 8">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo9.svg') }}" alt="Client 9">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo11.png') }}" alt="Client 11">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo6.png') }}" alt="Client 6">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo7.svg') }}" alt="Client 7">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo10.png') }}" alt="Client 10">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo12.png') }}" alt="Client 12">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo13.png') }}" alt="Client 13">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo14.png') }}" alt="Client 14">
-                </div>
 
-                <!-- Duplicate 14 Logos for Smooth Loop -->
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo1.png') }}" alt="Client 1">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo2.png') }}" alt="Client 2">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo3.png') }}" alt="Client 3">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo4.png') }}" alt="Client 4">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo5.png') }}" alt="Client 5">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo8.svg') }}" alt="Client 8">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo9.svg') }}" alt="Client 9">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo11.png') }}" alt="Client 11">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo6.png') }}" alt="Client 6">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo7.svg') }}" alt="Client 7">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo10.png') }}" alt="Client 10">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo12.png') }}" alt="Client 12">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo13.png') }}" alt="Client 13">
-                </div>
-                <div class="client-logo">
-                    <img src="{{ asset('assets/images/client/logo14.png') }}" alt="Client 14">
-                </div>
 
             </div>
         </div>
     </div>
 </div>
+@endif
 <!-- End Client Logo Area -->
 
 
@@ -238,7 +165,7 @@
 
 
         <!-- Start Portfolio Area  -->
-        <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
+      <div class="rn-portfolio-area rn-section-gap bg_color--1" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -249,132 +176,33 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-8"></div>
-                                <div class="bg-blr-image image-8"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">bkash Leardership Excellence Program - batch 11</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
 
                     <!-- Start Single Portfolio  -->
+                    @foreach($portfolioProjects->take(6) as $project)
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
                         <div class="portfolio text-center">
                             <div class="thumbnail-inner">
-                                <div class="thumbnail image-7"></div>
-                                <div class="bg-blr-image image-7"></div>
+                                <div class="thumbnail"><img src="{{ asset('storage/'.$project->featured_image) }}" class="w-100"></div>
+                                <div class="bg-blr-image "></div>
                             </div>
                             <div class="content">
                                 <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">Leadership Mastery Program</a>
+                                    <p>{{ $project->category }}</p>
+                                    <h4><a href="{{ route('project.show', $project->slug) }}">{{ $project->title }}</a>
                                     </h4>
                                     <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
+                                        <a class="rn-btn" href="{{ route('project.show', $project->slug) }}">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Portfolio  -->
-
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-6"></div>
-                                <div class="bg-blr-image image-6"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">People Skills for Professional Success</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-5"></div>
-                                <div class="bg-blr-image image-5"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">Strategic Leadership in a Cross-Cultural World </a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
-
-                    <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-4"></div>
-                                <div class="bg-blr-image image-4"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Team Building</p>
-                                    <h4><a href="#">LEADING ACROSS TEAMS</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <!-- End Single Portfolio  -->
 
 
 
-                                        <!-- Start Single Portfolio  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="portfolio text-center">
-                            <div class="thumbnail-inner">
-                                <div class="thumbnail image-1"></div>
-                                <div class="bg-blr-image image-1"></div>
-                            </div>
-                            <div class="content">
-                                <div class="inner">
-                                    <p>Leadership</p>
-                                    <h4><a href="#">From Good to Great: Leadership Excellence in Pharmaceuticals</a>
-                                    </h4>
-                                    <div class="portfolio-button">
-                                        <a class="rn-btn" href="#">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio  -->
+
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
@@ -689,76 +517,37 @@ executive coach, and management consultant, working with diverse organizations a
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title section-title--3 text-center mb--30">
-                            <h2 class="title">Latest News</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, <br /> but the
-                                majority have suffered alteration.</p>
+                            <h2 class="title">Upcoming Project</h2>
+                            <p>There are several upcoming initiatives and developments currently in progress. Stay tuned for updates as we work on delivering impactful projects and new opportunities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Start Blog Area  -->
+                    @foreach($upcomingProjects as $project)
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="blog blog-style--1">
                             <div class="thumbnail">
                                 <a href="#">
-                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-01.jpg') }}" alt="Blog Images" />
+                                    <img class="w-100" src="{{ asset('storage/'.$project->featured_image) }}" alt="Blog Images" />
                                 </a>
                             </div>
                             <div class="content">
-                                <p class="blogtype">Festival</p>
-                                <h4 class="title"><a href="#">Learn2Lead Fest 2026 Convenes Leaders in Dhaka</a>
+                                <p class="blogtype">{{ $project->category }}</p>
+                                <h4 class="title"><a href="{{ route('project.show', $project->slug) }}">{{ $project->title }}</a>
                                 </h4>
                                 <div class="blog-btn">
-                                    <a class="rn-btn text-white" href="#">Read More</a>
+                                    <a class="rn-btn text-white" href="{{ route('project.show', $project->slug) }}">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <!-- End Blog Area  -->
 
-                    <!-- Start Blog Area  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog blog-style--1">
-                            <div class="thumbnail">
-                                <a href="#">
-                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-02.jpg') }}" alt="Blog Images" />
-                                </a>
-                            </div>
-                            <div class="content">
-                                <p class="blogtype">Consultation</p>
-                                <h4 class="title"><a href="#">Consultation Meting with NRBs</a>
-                                </h4>
-                                <div class="blog-btn">
-                                    <a class="rn-btn text-white" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Blog Area  -->
 
-                    <!-- Start Blog Area  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="blog blog-style--1">
-                            <div class="thumbnail">
-                                <a href="#">
-                                    <img class="w-100" src="{{ asset('assets/images/blog/blog-03.jpg') }}" alt="Blog Images" />
-                                </a>
-                            </div>
-                            <div class="content">
-                                <p class="blogtype">Consultation</p>
-                                <h4 class="title"><a href="#">Consultation Meting with NRBs</a>
-                                </h4>
-                                <div class="blog-btn">
-                                    <a class="rn-btn text-white" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Blog Area  -->
-                </div>
-            </div>
-        </div>
-        <!-- End Blog Area  -->
+
+
 
         <!-- Start Contact Area  -->
         <div class="rn-contact-area rn-section-gap bg_color--1" id="contact">

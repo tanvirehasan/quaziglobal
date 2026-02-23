@@ -11736,12 +11736,12 @@ Footer Style Two
   background-position: center;
   border-radius: 5px;
   background-color: #0a0a0a;
-  background-image: url(../images/portfolio/portfolio-1.jpg);
+  /* background-image: url(../images/portfolio/portfolio-1.jpg); */
   transform: scale(1.13) translateZ(0);
   backface-visibility: hidden;
   transition: transform 0.28s ease;
   z-index: 4;
-}
+/* }
 .portfolio .thumbnail.image-1 {
   background-image: url(../images/portfolio/portfolio-1.jpg);
 }
@@ -11767,7 +11767,7 @@ Footer Style Two
   background-image: url(../images/portfolio/portfolio-8.jpg);
 }
 .portfolio .thumbnail.image-9 {
-  background-image: url(../images/portfolio/portfolio-9.jpg);
+  background-image: url(../images/portfolio/portfolio-9.jpg); */
 }
 .portfolio .thumbnail::after {
   background-color: rgba(45, 45, 45, 0.35);
@@ -18037,4 +18037,17 @@ a.purchase-btn:hover {
     .footer-social {
         gap: 10px;
     }
+}
+.logo-wrapper {
+    width: 150px;        /* fixed width */
+    height: 80px;         /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }

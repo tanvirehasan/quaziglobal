@@ -4,6 +4,9 @@ namespace App\Http\Controllers\fontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Project;
+use App\Models\Header;
+use App\Models\Client;
 
 class Homecontroller extends Controller
 {
@@ -24,7 +27,24 @@ class Homecontroller extends Controller
     
     public function index ()
     {
-        return view(view: 'font-end.home');
+        $header = Header::where('is_active', true)->first();
+        $clients = Client::where('is_active', true)->get();
+    // Upcoming projects for Latest Section
+    $upcomingProjects = Project::where('is_upcoming', true)
+                        ->latest()
+                        ->take(6)
+                        ->get();
+
+    // Normal projects for Portfolio Section
+    $portfolioProjects = Project::where('is_upcoming', false)
+                        ->latest()
+                        ->take(6)
+                        ->get();
+
+    return view('font-end.home', compact('upcomingProjects', 'portfolioProjects', 'header','clients'));
+
+   
+        // return view(view: 'font-end.home');
     }
     public function projects()
     {
